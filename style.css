@@ -1,0 +1,308 @@
+html {
+  scroll-behavior: smooth;
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  background-image: url("img/bg-head.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+header {
+  height: 100vh;
+  width: 100%;
+}
+nav {
+  height: 5vh;
+  width: 100%;
+  position: center;
+  background-color: rgb(97, 5, 108);
+  z-index: 2;
+}
+nav ul {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  /* margin: 0 5px; */
+  justify-content: center;
+  /* background-color: pink; */
+
+  height: 100%;
+  /* width: 100%; */
+}
+nav ul span {
+  margin-right: 20px;
+  padding: 5px;
+  transition: all 0.5s ease-in-out;
+  background-color: none;
+  font-size: 20px;
+  /* border-radius: 0px 0px; */
+  /* color: aliceblue; */
+  color: aliceblue;
+}
+nav ul span:hover {
+  padding: 10px;
+  background-color: rgb(255, 255, 255);
+  font-size: 22px;
+  border-radius: 10px 0px;
+  color: purple;
+}
+a {
+  text-decoration: none;
+  transition: color 0.1s ease-in;
+  color: white;
+}
+
+a:hover {
+  
+  color: black;
+}
+.contact-sources a:hover {
+  color: purple;
+}
+.intro {
+  position: absolute;
+  top: 30vh;
+  left: 30px;
+  border: 1px solid black;
+  padding: 8px;
+  color: rgb(255, 255, 255);
+  box-shadow: 5px 0px 5px black;
+  font-size: 60px;
+}
+
+.intro b {
+  color: purple;
+}
+
+.my-workBtn {
+  position: relative;
+  z-index: 1;
+  background-color: transparent;
+  color: white;
+  padding: 8px 18px;
+  cursor: pointer;
+}
+.my-workBtn:hover {
+  /* height: 32.5px;
+  width: 137px; */
+  background: rgb(159, 0, 159);
+  /* transform: translateY(-36px); */
+}
+/* .my-workBtn:hover {
+      background-color: purple;
+    } */
+/* .my-workBtn-bg {
+  transition: all 0.3s ease-in;
+  height: 32.5px;
+  width: 0;
+  transform: translateY(-36px);
+} */
+
+/* About section */
+.aboutSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+/*   background-image: url("img/c-bg.jpg"); */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  padding: 52px 0 52px 0;
+  height: 90vh;
+  /* width: 106%; */
+}
+
+
+.about {
+  width: 100%;
+  height: 60px;
+  background: transparent;
+  font-size: 60px;
+  padding: 30px 0;
+  color: purple;
+}
+.about-data {
+  width: 60%;
+  color: white;
+  margin: 20px 0;
+  padding: 10px;
+  font-size: 30px;
+}
+
+/* my project section */
+.projects {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin: 50px 0;
+  height: 90vh;
+  color: aliceblue;
+}
+
+.my-projects {
+  width: 100%;
+  height: 60px;
+  background: transparent;
+  font-size: 60px;
+  padding: 30px 0;
+  color: purple;
+}
+
+.allProjects {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  width: 80%;
+  height: 60vh;
+    color: white;
+}
+.projectName {
+  display: flex;
+  flex-direction: column;
+}
+.projectName div {
+  padding: 10px;
+  margin: 1px;
+  width: 100%;
+  border: 1px solid white;
+  cursor: pointer;
+}
+.projectName div:hover {
+  background-color: purple;
+}
+.aboutProject {
+  align-items: center;
+  width: 60%;
+  height: 188px;
+  display: flex;
+}
+.aboutProject2{
+display:none;
+}
+
+/* Skills section */
+.skillsSection {
+  color: aliceblue;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.skills {
+  width: 100%;
+  height: 60px;
+  background: transparent;
+  font-size: 60px;
+  padding: 30px 0;
+  color: purple;
+}
+.skills-data {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.skills-data div {
+  padding: 5px;
+  display: flex;
+  flex-direction: row;
+  margin: 5px;
+}
+.skills-data div div {
+  padding: 10px 15px;
+  background-color: purple;
+  margin: 5px;
+}
+.skills-data div div:hover {
+  padding: 10px;
+  transition: all 0.5s ease-in-out;
+  background-color: rgb(255, 255, 255);
+  font-size: 20px;
+  border-radius: 8px 0px;
+  color: purple;
+}
+
+/* Contact section */
+.contactSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 50px 0;
+  background-image: url("img/bg-head.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+.contact {
+  width: 100%;
+  height: 60px;
+  background: transparent;
+  font-size: 60px;
+  padding: 30px 0;
+  color: purple;
+  margin: 50px;
+}
+.pp img {
+  border-radius: 50%;
+  height: 200px;
+  width: 200px;
+}
+.contact-sources {
+  font-size: 25px;
+}
+footer {
+  background-color: purple;
+  font-size: 10px;
+  color: white;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+/* responsive */
+/* @media screen and (max-width: 700px ) {
+  .aboutSection {
+    font-size: 50px;
+    color: red;
+  }
+} */
+
+@media screen and (max-width: 600px) {
+  .about{
+  font-size:40px;
+  }
+  .intro {
+    font-size: 30px;
+  }
+
+  .about-data {
+    font-size: 20px;
+  }
+  nav ul span {
+    font-size: 15px;
+  }
+
+  .allProjects {
+    flex-direction: column;
+    font-size: 18px;
+  }
+  .projectName {
+    flex-direction: row;
+    text-align: center;
+  }
+  .contact-sources {
+    font-size: 15px;
+  }
+  .aboutProject2{
+  display:block;
+  }
+  .aboutProject1{
+  display:none;
+  }
+}
