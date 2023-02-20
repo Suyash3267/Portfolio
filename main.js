@@ -1,26 +1,27 @@
-$(".Punching-and-Blanking-Press-Machine").click(function (e) {
+document.querySelector('.Punching-and-Blanking-Press-Machine').addEventListener('click', function (e) {
   e.preventDefault();
-  $(".aboutProject").text(
-    "Aiming to design and develop a punching and blanking machine with help of effective CAM mechanism using different materials for long life"
-  );
-  $(".projectName div").css("background", "transparent");
-  $(".Punching-and-Blanking-Press-Machine").css("background-color", "purple");
+
+  document.querySelector('.aboutProject').textContent = 'Aiming to design and develop a punching and blanking machine with help of effective CAM mechanism using different materials for long life';
+  document.querySelectorAll('.projectName div').forEach(function (div) {
+    div.style.background = 'transparent';
+  });
+  document.querySelector('.Punching-and-Blanking-Press-Machine').style.backgroundColor = 'purple';
 });
 
-$(".Adaptive-Headlights").click(function (e) {
-  e.preventDefault();
-  $(".aboutProject").text(
-    "Design And Development of steering with movable headlights"
-  );
-  $(".projectName div").css("background", "transparent");
-  $(".Adaptive-Headlights").css("background-color", "purple");
+document.querySelector('.Adaptive-Headlights').addEventListener('click', function (e) {
+  // e.preventDefault();
+  document.querySelector('.aboutProject').textContent = 'Design And Development of steering with movable headlights';
+  document.querySelectorAll('.projectName div').forEach(function (div) {
+    div.style.background = 'transparent';
+  });
+  document.querySelector('.Adaptive-Headlights').style.backgroundColor = 'purple';
 });
 
-$(".Portfolio-site").click(function (e) {
-  e.preventDefault();
-  $(".aboutProject").text(
-    "This is My Responsive Portfolio site where i showcased my programming skills"
-  );
-  $(".projectName div").css("background", "transparent");
-  $(".Portfolio-site").css("background-color", "purple");
+document.querySelector('.Portfolio-site').addEventListener('click', function (e) {
+  // e.preventDefault();
+  document.querySelector('.aboutProject').textContent = 'This is My Responsive Portfolio site where i showcased my programming skills';
+  document.querySelectorAll('.projectName div').forEach(function (div) {
+    div.style.background = 'transparent';
+  });
+  document.querySelector('.Portfolio-site').style.backgroundColor = 'purple';
 });
