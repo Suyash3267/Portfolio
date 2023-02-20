@@ -1,31 +1,88 @@
+
 html {
+/* text-shadow: 1px 1px #5a5252; */
+text-shadow: -.5px .5px 0 rgb(220, 169, 196),
+                          .5px -.5px 0 rgba(181, 176, 176, 0.58);
+                       
   scroll-behavior: smooth;
+  background: linear-gradient(-45deg, #d2a99c, #cf7dc9, #a790df, #9fb8d7);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+	height: max-content;
+
 }
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+/* Scroller styling */
+.scroller {
+  height: 1.2em;
+  line-height: 1.2em;
+  position: relative;
+  overflow: hidden;
+  width: 10em;
+}
+.scroller > span {
+  position: absolute;
+  top: 0;
+  animation: slide 5s infinite;
+  font-weight: bold;
+  
+}
+@keyframes slide {
+  0% {
+    top: 0;
+  }
+
+  75% {
+    top: -1.2em;
+  }
+}
+
+/*  */
 body {
   margin: 0;
   padding: 0;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-  background-image: url("img/bg-head.jpg");
+  /* background-image: url("img/bg-head.jpg"); */
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
 }
+
+
+
+
 header {
   height: 100vh;
   width: 100%;
 }
 nav {
-  height: 5vh;
+ 
+  height: auto 3vh ;
+  padding: 1px;
   width: 100%;
   position: center;
   background-color: rgb(97, 5, 108);
   z-index: 2;
+  
 }
 nav ul {
   display: flex;
   flex-direction: row;
-  align-items: center;
+width: 100%; 
+ align-items: center;
   /* margin: 0 5px; */
   justify-content: center;
   /* background-color: pink; */
@@ -44,10 +101,11 @@ nav ul span {
   color: aliceblue;
 }
 nav ul span:hover {
-  padding: 10px;
-  background-color: rgb(255, 255, 255);
-  font-size: 22px;
-  border-radius: 10px 0px;
+  /* padding: 10px; */
+  background-color: rgb(248, 215, 247);
+  /* font-size: 22px; */
+  border-radius: 5px 0px;
+  transition-timing-function: ease-in-out;
   color: purple;
 }
 a {
@@ -62,45 +120,53 @@ a:hover {
 }
 .contact-sources a:hover {
   color: purple;
+  transition-timing-function: ease-in-out;
+
 }
 .intro {
   position: absolute;
+  width: 600px;
   top: 30vh;
   left: 30px;
   border: 1px solid black;
   padding: 8px;
   color: rgb(255, 255, 255);
   box-shadow: 5px 0px 5px black;
-  font-size: 60px;
+  font-size: 40px;
 }
 
 .intro b {
   color: purple;
+  
 }
 
 .my-workBtn {
   position: relative;
   z-index: 1;
+  border: none;
+border-style: groove;
   background-color: transparent;
   color: white;
   padding: 8px 18px;
   cursor: pointer;
 }
 .my-workBtn:hover {
-  /* height: 32.5px;
-  width: 137px; */
-  background: rgb(159, 0, 159);
-  /* transform: translateY(-36px); */
+ transition-duration: 0.2s;
+  background: rgb(97, 5, 108);
+  border-radius: 5px;
+  transition: all 0.2s ease-in;
+
+
 }
-/* .my-workBtn:hover {
+.my-workBtn:hover {
       background-color: purple;
     } */
-/* .my-workBtn-bg {
+ .my-workBtn-bg {
   transition: all 0.3s ease-in;
   height: 32.5px;
   width: 0;
   transform: translateY(-36px);
-} */
+}
 
 /* About section */
 .aboutSection {
@@ -125,7 +191,7 @@ a:hover {
   background: transparent;
   font-size: 60px;
   padding: 30px 0;
-  color: purple;
+  color: rgb(97, 5, 108);
 }
 .about-data {
   width: 60%;
@@ -152,7 +218,7 @@ a:hover {
   background: transparent;
   font-size: 60px;
   padding: 30px 0;
-  color: purple;
+  color: rgb(97, 5, 108);
 }
 
 .allProjects {
@@ -176,7 +242,7 @@ a:hover {
   cursor: pointer;
 }
 .projectName div:hover {
-  background-color: purple;
+  background-color:rgb(97, 5, 108);
 }
 .aboutProject {
   align-items: center;
@@ -202,7 +268,7 @@ display:none;
   background: transparent;
   font-size: 60px;
   padding: 30px 0;
-  color: purple;
+  color: rgb(97, 5, 108);
 }
 .skills-data {
   display: flex;
@@ -216,18 +282,20 @@ display:none;
   margin: 5px;
 }
 .skills-data div div {
+  justify-content: center;
+  align-items: center;
   padding: 10px 15px;
-  background-color: purple;
+  background-color: rgb(97, 5, 108);
   margin: 5px;
 }
 .skills-data div div:hover {
-  padding: 10px;
-  transition: all 0.5s ease-in-out;
+  transition: all 0.2s ease-in-out;
   background-color: rgb(255, 255, 255);
-  font-size: 20px;
-  border-radius: 8px 0px;
-  color: purple;
+  /* font-size: 20px; */
+  border-radius: 8px 1px;
+  color:rgb(97, 5, 108);
 }
+
 /* Gallary section */
 .Gallarysection{
   display: flex;
@@ -246,7 +314,7 @@ display:none;
   background: transparent;
   font-size: 60px;
   padding: 30px 0;
-  color: purple;
+  color:rgb(97, 5, 108);
   margin: 50px;
 
 }
@@ -267,7 +335,7 @@ display:none;
   
   font-size: 15px;
   padding: 10px 15px;
-  background-color: purple;
+  background-color:rgb(97, 5, 108);
   margin: 15px;
   
 }
@@ -275,20 +343,17 @@ display:none;
   
   font-size: 15px;
   padding: 10px 15px;
-  background-color: purple;
+  background-color:rgb(97, 5, 108);
   margin: 15px;
   
 }
 .gallaryInfo :hover{
 
-  /* padding: 10px,15px; */
-  transition: all 0.3s ease-out;
+  transition: all 0.1s ease-out;
   background-color: rgb(245, 230, 243);
-  font-size: 20px;
   border-radius: 5px 0px;
-  color: purple;
+  color: rgb(97, 5, 108);
 }
-
 
 /* Contact section */
 .contactSection {
@@ -297,7 +362,7 @@ display:none;
   align-items: center;
   text-align: center;
   padding: 50px 0;
-  background-image: url("img/bg-head.jpg");
+  /* background-image: url("img/bg-head.jpg"); */
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -309,19 +374,59 @@ display:none;
   background: transparent;
   font-size: 60px;
   padding: 30px 0;
-  color: purple;
+  color:rgb(97, 5, 108);
   margin: 50px;
 }
+
+
+/* Profile image start */
 .pp img {
+ margin-top: 40px;
+ margin-bottom: 40px;
+
   border-radius: 50%;
   height: 200px;
   width: 200px;
 }
+
+.contactSection{
+  overflow: hidden;
+display: flex;
+  padding: 96px 24px 48px;
+
+  justify-content: center;
+  align-items: center;
+  background: transparent;
+}
+
+
+
+.pp img {
+  transition: all 0.3s;
+  box-sizing: border-box;
+  max-width: 100%;
+  
+}
+
+.pp:hover img {
+  transform: scale(1.1) rotate(3deg);
+}
+
+/* Profile img end */
 .contact-sources {
   font-size: 25px;
+padding: 30px;
+  /* box-shadow: 0 0 6px 6px  rgb(220, 170, 220) inset; */
+  /* background: linear-gradient(rgb(156, 68, 156) ,rgb(112, 6, 112)); */
+
+}
+.contact-sources a:hover{
+
+color: rgb(220, 170, 220);
 }
 footer {
-  background-color: purple;
+  
+  background-color:rgb(97, 5, 108);
   font-size: 10px;
   color: white;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
@@ -333,6 +438,13 @@ footer {
     color: red;
   }
 } */
+@media screen and (max-width: 800px) {
+  .intro {
+    font-size: 35px;
+    width: 400px;
+  }
+
+}
 
 @media screen and (max-width: 600px) {
   .about{
@@ -340,13 +452,19 @@ footer {
   }
   .intro {
     font-size: 30px;
+    width: 300px;
   }
 
   .about-data {
     font-size: 20px;
   }
+
+  nav ul{
+    width: max-content;
+  }
   nav ul span {
     font-size: 15px;
+    
   }
 
   .allProjects {
@@ -356,6 +474,11 @@ footer {
   .projectName {
     flex-direction: row;
     text-align: center;
+  }
+  .Gallarysection{
+  
+    font-size: 18px;
+
   }
   .contact-sources {
     font-size: 15px;
